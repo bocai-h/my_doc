@@ -12,5 +12,8 @@
 - mtr host_path
 > mtr命令把ping命令和tracepath命令合成了一个。mtr会持续发包，并显示每一跳ping所用的时间。也会显示过程中的任何问题
 
+- nano -c 文件
+> 这种模式下打开的nano会显示行数
+
 
 
