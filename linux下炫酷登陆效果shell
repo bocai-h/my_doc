@@ -1,0 +1,17 @@
+# linux 牛逼效果shell
+
+### linux下输入用户名和密码进入图形界面
+
+~~~~bash
+gui()
+{
+if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
+  startx
+  logout
+fi
+}
+gui
+
+~~~~
+
+*只要将这段代码写入启动的.profile就行了*
