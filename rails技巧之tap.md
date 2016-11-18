@@ -31,5 +31,5 @@ tap源码
 
 ~~~~
  [].tap {|i| i << "abc"}
-''.tap{|i| i << do_some_thind }
+''.tap{|i| i << do_some_thing }
 ~~~~
