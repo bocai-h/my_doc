@@ -1,0 +1,3 @@
+# rubymine系列软件破解
+
+[rubymine破解](http://xclient.info/a/f0b9738a-36fd-8a97-a966-0d3db497092d.html?nsukey=R3fdt9z%2FT9LuVQbmcek5THxT405WLmXO6nbxtNFaVuSJ4nWwWol2UIchpkZKfTplsFQWk7YCCzWxzRx5Z8NjE6Kr%2FwtVp7VtsgS7CcJSGxvJtzWPjPjl5CUkiHqfzX6KG9Bspn9b%2FI85YxfCBVE2DhK7ufWo096Ly84Kcbu1zocnAOnCjZ8ukVYeCvkCETly)
