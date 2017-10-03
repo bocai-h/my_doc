@@ -40,7 +40,7 @@ pacstrap -i /mnt base base-devel
 ~~~~
 6.生成fstab文件
 ~~~~
-genfstab -U /mnt > /mnt/etc/fstab
+genfstab -U /mnt >> /mnt/etc/fstab
 
 ~~~~
 7. wifi-menu连接wifi
