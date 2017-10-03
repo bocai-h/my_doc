@@ -11,7 +11,7 @@
 
 ~~~~
 2.分区(使用parted 不要使用fdisk)
-> - sblk 查看当前硬盘名称(一般为/dev/sda)
+> - lsblk 查看当前硬盘名称(一般为/dev/sda)
 > - 利用parted工具分盘
    parted /dev/sda(进入parted模式)
          mklabel gpt 建立分区表
